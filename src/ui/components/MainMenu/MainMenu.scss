@@ -1,0 +1,24 @@
+ol.meli-breadcrumb {
+    padding: 10px 0px;
+    list-style: none;
+
+    li.meli-breadcrumb-item {
+        display: inline;
+        font-size: 14px;
+        color: #999;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    li+li:before {
+        padding: 8px;
+        color: #999;
+        content: ">\00a0";
+    }
+
+    li:last-child {
+        font-weight: bold;
+    }
+}
